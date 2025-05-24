@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    background-color:var(--dark-cyan);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.icons img{
+    position: absolute;
+    left: -600px;
+    top: -600px;
+}
+
+.iconz{
+    position: absolute;
+     width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.iconz img{
+    position: absolute;
+    right: -600px;
+    bottom: -600px;
+}
+ 
+
+
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px #00000047;
+}
+
+.container .top {
+    background-image: url(./images/bg-pattern-card.svg);
+    height: 40%;
+}
+
+.container .imge {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -10%);
+}
+
+.container .imge img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.container .persone {
+    margin-top: 40px;
+}
+
+.container .persone h1 {
+    color: var(--very-dark-desaturated-blue);
+}
+
+.container .persone span {
+    color: var(--dark-gray);
+    font-family: normal;
+}
+
+.container .persone span:last-child {
+    font-size: 22px;
+}
+
+.container .info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top: 1px solid var(--very-dark-desaturated-blue);
+}
+
+.container .info .col {}
+
+.container .info .col p:first-child {
+    font-weight: bold;
+    color: var(--very-dark-desaturated-blue);
+    font-size: 20px;
+}
+
+.container .info .col p:last-child {
+    margin-top: 10px;
+    color: var(--dark-gray);
+}
